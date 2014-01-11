@@ -1,0 +1,6 @@
+[submodule "ExternalLibrary/OCDebugTools"]
+	path = ExternalLibrary/OCDebugTools
+	url = https://github.com/aliueKurone/OCDebugTools.git
+[submodule "ExternalLibrary/libextobjc"]
+	path = ExternalLibrary/libextobjc
+	url = https://github.com/aliueKurone/libextobjc.git

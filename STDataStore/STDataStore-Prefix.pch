@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'STDataStore' target in the 'STDataStore' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

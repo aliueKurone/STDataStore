@@ -1,0 +1,6 @@
+*.xcodeproj binary
+*.workspace binary
+*.pbxproj binary
+#*.plist binary
+*.xcscheme binary
+#*.xml binary
