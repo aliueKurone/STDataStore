@@ -581,10 +581,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "STDataStore/STDataStore-Prefix.pch";
 				INFOPLIST_FILE = "STDataStore/STDataStore-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/STDataStore-eufxwpruswovhfalfreoyttdumlk/Build/Products/Debug\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -600,10 +597,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "STDataStore/STDataStore-Prefix.pch";
 				INFOPLIST_FILE = "STDataStore/STDataStore-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/STDataStore-eufxwpruswovhfalfreoyttdumlk/Build/Products/Debug\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
