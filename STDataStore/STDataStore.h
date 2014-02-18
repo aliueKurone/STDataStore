@@ -14,6 +14,8 @@
 
 + (instancetype)defaultStore;
 
+- (NSURL *)dataStorageURL;
+
 @property(nonatomic, readonly) NSManagedObjectContext *mainContext;
 
 - (id)createNewObjectOfEntity:(NSString *)entityName;
@@ -25,7 +27,7 @@
 - (void)deleteObject:(NSManagedObject *)object;
 
 
-- (NSURL *)dataStorageURL;
+
 
 // for debug
 // - (void)insertDummyRecordOfCount:(NSInteger)count;

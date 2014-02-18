@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <OCDebugTools/OCDebugTools.h>
 @class NSManagedObjectContext, NSManagedObject;
 
 
@@ -48,8 +49,8 @@ extern void CDDeleteObject(NSManagedObjectContext *context, NSManagedObject *obj
 
 // ディレクトリ
 extern NSURL *CDDataStorageURLWithFileNameInAppFolder(NSString *fileName, NSString *appDirectoryName);
-extern NSURL *CDApplicationSupportFolder(NSString *appDirectoryName);
-
+extern NSURL *CDApplicationSupportFolder(NSString *appDirectoryName) DeprecatedWithMessage("Using CDApplicationFileDirectoryWithName instead");
+extern NSURL *CDApplicationFileDirectoryWithName(NSString *directoryName);
 
 #pragma - Options
 

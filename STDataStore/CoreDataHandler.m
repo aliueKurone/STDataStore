@@ -29,9 +29,23 @@ NSURL *CDApplicationSupportFolder(NSString *appDirectoryName)
 }
 
 
+extern NSURL *CDApplicationFileDirectoryWithName(NSString *directoryName)
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSURL *appSupportURL = [[fileManager URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
+    NSURL *appDirectoryURL = [appSupportURL URLByAppendingPathComponent:directoryName];
+    NSError *error = nil;
+    if ([fileManager createDirectoryAtURL:appDirectoryURL withIntermediateDirectories:YES attributes:nil error:&error]) {
+        if (error)
+            LoggingError(error);
+    }
+    return appDirectoryURL;
+}
+
+
 NSURL *CDDataStorageURLWithFileNameInAppFolder(NSString *fileName, NSString *appDirectoryName)
 {
-    NSURL *appFolder = CDApplicationSupportFolder(appDirectoryName);
+    NSURL *appFolder = CDApplicationFileDirectoryWithName(appDirectoryName);
     
     return [appFolder URLByAppendingPathComponent:fileName];
 }
